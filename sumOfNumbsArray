@@ -1,0 +1,24 @@
+ static void Main(string[] args)
+ {
+     int[] array = new int[] {};
+     Console.WriteLine("The total is " + SumOfnumbers(array));
+ }
+
+ static int SumOfnumbers(int[] nums)
+ {
+
+     if (nums.Length==0)
+     {
+         return -1;
+     }
+     else
+     {
+         int sum = 0;
+         foreach (int x in nums)
+         {
+             sum += x;
+         }
+         return sum;
+     }
+     
+ }
